@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<p class='heading'>Array</p>
+	<div class='grid'></div>
+
+	
+
+
+	<script>
+
+// Main
+		let grid = document.querySelector('.grid');
+		let algo = [
+			{
+				name: 'Array  (Insert , Delete)',
+				link: `array/array_adt.html`
+			},
+			{
+				name: 'Linear Search',
+				link: `array/linear.html`
+			},
+			
+			{
+				name: 'Prefix Sum',
+				link: `array/prefix_sum.html`
+			},
+			{
+				name: 'Sliding Windows',
+				link: `array/sliding_windows.html`
+			}
+			
+		]
+		init();
+
+// Utility function 
+
+		function init() {
+			algo.forEach((e, i) => {
+				let html = `
+						<a href="${e.link}" class="algo__link">${e.name}</a>
+				`
+				let algo = document.createElement('div');
+				algo.classList.add('algo');
+				algo.innerHTML = html;
+				grid.appendChild(algo);
+			})
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time-Complexity</title>
+	<style>
+		html, * {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			min-height: 100vh;
+			background: linear-gradient(#141e30 ,#243b55);
+		}
+
+
+		p:nth-child(1) {
+			padding: 20px;
+			text-align: center;
+			font-family: ubuntu;
+			font-weight: bolder;
+			font-size:40px;
+			color: white;
+			font-weight: bolder;
+			text-shadow: -2px 5px 3px rgba(0, 0, 0, .2);
+			text-transform: uppercase;
+			background-color: rgba(219, 115, 115, 0.897);
+			box-shadow: 0 0 20px #f01515;
+			border-color: #a094cf;
+		}
+
+		.blog {
+			margin: 10px auto;
+			max-width: 800px;
+			/*background: white;*/
+			text-align: center;
+		}
+
+		.blog__heading {
+			text-align: center;
+			font-size: 29px;
+			text-transform: capitalize;
+			font-weight: bolder;
+			color: #ffffff;
+			padding: 10px;
+		}
+		.blog .survey__image {
+			width: 700px;
+			margin: 15px auto;
+		}
+
+		.survey_explain{
+			text-align: justify;
+			margin: 30px auto;
+			padding: 5px;
+			font-size: 24px;
+			color: #f7f7f7;
+			font-weight: normal;
+			line-height: 30px;
+		}
+
+		.each_header{
+			text-transform: capitalize;
+			font-size: 30px;
+			color: rgb(255, 255, 255);
+		
+		}
+
+		.o_notations {
+			margin: 20px auto;
+		}
+
+		.o_notations > div {
+			margin: 30px auto;
+		}
+
+		.o_notations > div > .head {
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		.big__each__explaination {
+
+			font-size: 20px;
+		}
+		.doc {
+			font-size: 25px;
+			font-weight: normal;
+			padding: 20px 0px;
+		}
+
+		code > pre {
+			font-size: 15px;
+			background: black;
+			padding: 10px;
+			color: white;
+			border-radius: 10px;
+			box-shadow: 5px 5px 8px rgba(0, 0, 0, .9);
+		}
+
+		.list {
+			position: relative;
+			left: 30px;
+		}
+		
+		.image_ext {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			padding: 10px 0px;
+		}
+
+
+	</style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<p> Time Complexity </p>
+	<div class='grid'>
+			<div class="blog">
+				<h3 class="blog__heading"> What's Time Complexity ?</h3>	
+				<div class="blog_why">
+					
+					<div class="survey_explain">
+				To descide weather the given piece of code is good or not how would you tell. So the answer of this question is 
+						<b>
+							Time and space complexity
+						</b>.
+
+					</div>
+					<img class="survey__image" alt="time_space_complexity" src="../images/new/o.png">
+					<div class="survey_explain">
+						<b>Definition: </b> &nbsp; Time complexity is the computational complexity that describes the amount of computer time it takes to run algorithm. Similarly, Space complexity of an algorithm quantifies the amount of space or memory taken by an algorithm to run as a function of the length of the input.
+
+					</div>
+
+					<div class="survey_explain">
+						<b class="each_header">Three Asymptotic</b>
+						<div class="o_notations">
+							<div class="big_θ_notation">
+								<b class="head">1. Big-θ (Big-Theta) notation</b>
+								<div class="big__each__explaination">
+									<p></p>
+									<p class="doc">
+										Let's look at a simple implementation of linear search:
+									</p>
+									<code>
+										<pre>
+var doLinearSearch = function(array, targetValue) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === targetValue) { 
+        return i;  // found 
+    }
+  }
+  return -1;  // didn't find 
+};
+										</pre>
+									</code>		
+									<p class="doc">
+										Let's denote the size of the array (array.length) by n nn. The maximum number of times that the for-loop can run is n nn, and this worst case occurs when the value being searched for is not present in the array.
+									</p>
+									<p class="doc">
+										Each time the for-loop iterates, it has to do several things:
+										<ul class="list">
+											<li>compare i with array.length</li>
+											<li>compare array[i] with targetValue</li>
+											<li>possibly return the value of i</li>
+											<li>increment i.</li>
+										</ul>
+									</p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+									<p class="image_ext">
+									
+									
+									</p>
+									
+									<p class="doc">
+										
+									</p>
+									
+									<p class="doc">
+										
+									</p>
+
+									<p class="image_ext">
+										
+									</p>									
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+
+								</div>
+							</div>
+
+							<div class="big_o_notation">
+								<b class="head">2. Big-O (Big-Oh) Notation</b>
+								<div class="big__each__explaination">
+									<p></p>
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+									
+									<p class="image_ext">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+								</div>
+							</div>
+
+							<div class="big_om_notation">
+								<b class="head">3. Big-Ω (Big-Omega) notation</b>
+								<div class="big__each__explaination">
+									<p></p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+ 									</p>
+
+									<p class="image_ext">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+									<p class="doc">
+										
+									</p>
+
+									<p class="doc">
+										
+									</p>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<script>
+
+// Main
+
+
+	</script>
+</body>
+</html>

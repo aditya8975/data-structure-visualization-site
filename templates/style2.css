@@ -1,0 +1,74 @@
+
+
+body {
+    
+
+min-height: 100vh;
+background: linear-gradient(#141e30 ,#243b55);
+}
+.grid {
+    max-width: 600px;
+    position: relative;
+    padding: 10px;
+    margin: 50px auto;
+    border: 2px solid #dadada;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #9ecaed;
+    border-color: #9ecaed;
+}
+
+
+
+.heading{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+p:nth-child(1) {
+    padding: 20px;
+    text-align: center;
+    font-family: ubuntu;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+}
+
+.algo {
+    display: block;
+    padding: 10px;
+    background: rgb(0, 0, 0);
+    margin: 10px;
+    box-shadow: 0 0 10px #9c57d4;
+    border-color: #a094cf;
+}
+
+.visualise {
+    text-align: center;
+}
+
+.visualise__array {
+    padding: 10px;
+    margin: auto;
+}
+.visualise__array > option {
+    padding: 10px;
+}
+.algo__link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}

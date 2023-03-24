@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Programming</title>
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<p class='heading'>Dynamic Programming</p>
+	<div class='grid'></div>
+
+	</div>
+
+	<div class="circular__read">
+		
+	</div>
+	<script>
+
+// Main
+		let grid = document.querySelector('.grid');
+		let algo = [
+			
+			{
+				name: 'Travelling salesman',
+				link: `dynamic/travelling_salesman.html`
+			}
+		]
+		init();
+
+// Utility function 
+
+		function init() {
+			algo.forEach((e, i) => {
+				let html = `
+						<a href="${e.link}" class="algo__link">${e.name}</a>
+				`
+				let algo = document.createElement('div');
+				algo.classList.add('algo');
+				algo.innerHTML = html;
+				grid.appendChild(algo);
+			})
+		}
+	</script>
+</body>
+</html>
